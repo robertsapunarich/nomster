@@ -1,4 +1,4 @@
-.booyah-box{
+.booyah-box {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -13,4 +13,21 @@
 h1, h2, h3, h4, h5, h6 {
 	margin:0;
 	padding:0;
+}
+
+body {
+	background: url('/assets/fresh_snow.png');
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.navbar.navbar-inverse {
+	background:url('/assets/binding_dark.png');
+	border-radius: 0;
+	box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #ffffff;
+	font-family: 'alegreyaregular', serif;
+	font-size:26px;
 }

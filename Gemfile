@@ -38,6 +38,9 @@ gem 'bootstrap-sass', '~> 3.3.4'
 # Include kaminari for pagination
 gem 'kaminari'
 
+# Include simple_form
+gem 'simple_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

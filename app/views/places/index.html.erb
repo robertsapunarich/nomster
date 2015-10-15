@@ -1,4 +1,8 @@
-<%= paginate @places %>
+<div class="row">
+	<div class="col-xs-2 col-xs-offset-5">
+		<%= paginate @places %>
+	</div>
+</div>
 
 <% @places.each do |place| %>
 	<div class="booyah-box col-xs-10 col-xs-offset-1">

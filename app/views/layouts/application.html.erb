@@ -50,8 +50,9 @@
 <% if alert.present? %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-
-<%= yield %>
+<div class="container-fluid">
+  <%= yield %>
+</div>
 
 </body>
 </html>

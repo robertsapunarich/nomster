@@ -4,8 +4,20 @@
 	<br/><br/>
 	<p><%= @place.description %></p>
 
+  <% @place.photos.each do |photo| %>
+    <div class ="col-xs-5">
+      <% if photo.picture.present? %>
+        <%= image_tag photo.picture, :class => "img-responsive center-block" %>
+      <% end %>
+      <% if photo.caption.present? %> 
+        <%= photo.caption %>
+      <% end %>
+    </div>
+  <% end %>
+
   
 </head>
+  
   <body>
     <div id="map"></div>
 
@@ -78,10 +90,6 @@
   <%= f.submit "Upload a photo", :class => 'btn btn-primary' %>
 <% end %>
 
-<%= @place.photos.each do |photo| %>
-  <%= image_tag photo.picture %>
-  <%= photo.caption %>
-<% end %>
 
 <div class="col-xs-10 col-xs-offset-1">
   <h1 class="pull-left">Comments</h1>

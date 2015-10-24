@@ -13,7 +13,16 @@
 		<% if place.user.present? %>
 			<small><%= place.user.email %></small>
 		<% end %>
-		
+	
+	<% if place.photos.present? %>
+			<% if place.photos.last.caption.present? %>
+			<blockquote>
+				<%= place.photos.last.caption %>
+			<% end %>
+			</blockquote>
+			<%= image_tag place.photos.last.picture, :class => "img-responsive center-block" %>
+	<% end %>
+
 	<% if place.comments.present? %>
 		<div class="col-xs-12">
     	<blockquote>

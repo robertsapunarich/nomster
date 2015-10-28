@@ -1,9 +1,3 @@
-<div class="row">
-	<div class="col-xs-2 col-xs-offset-5">
-		<%= paginate @places %>
-	</div>
-</div>
-
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -14,13 +8,13 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag 'slider1.jpg' %>
+      <%= image_tag 'slider1.jpg', :class => 'img-responsive' %>
       <div class="carousel-caption">
         Find the best stuff and things
       </div>
     </div>
     <div class="item">
-      <%= image_tag 'slider2.jpg' %>
+      <%= image_tag 'slider2.jpg', :class => 'img-responsive' %>
       <div class="carousel-caption">
         Must drink all the beers
       </div>
@@ -36,6 +30,12 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+
+<div class="row">
+	<div class="col-xs-2 col-xs-offset-5">
+		<%= paginate @places %>
+	</div>
 </div>
 
 

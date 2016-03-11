@@ -62,6 +62,12 @@ gem "fog", "~> 1.3.1"
 # Include factory_girl
 gem "factory_girl_rails", "~> 4.0"
 
+# Include omniauth
+gem 'omniauth'
+
+# Include omniauth facebook strategy
+gem 'omniauth-facebook'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

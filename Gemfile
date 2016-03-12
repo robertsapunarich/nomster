@@ -63,7 +63,7 @@ gem "fog", "~> 1.3.1"
 gem "factory_girl_rails", "~> 4.0"
 
 # Include omniauth
-gem 'omniauth'
+# gem 'omniauth'
 
 # Include omniauth facebook strategy
 gem 'omniauth-facebook'
